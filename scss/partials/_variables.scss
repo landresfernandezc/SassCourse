@@ -1,0 +1,51 @@
+//Theme
+//Allowed values: Dark,Light, Default,RedFight
+$theme:RedFight;
+//Allowed values: blue-beans, rogers-rovers, pastry-pizza
+$brand:rogers-rovers;
+
+//Color section
+//Default
+$text-color: #222222;
+$theme-color:#170a48;
+$secondary-color:#f27731;
+$ternary-color:#ccf962;
+$link-color:$secondary-color;
+$menu-item-color:white;
+
+$body-background-color:#fff;
+@if $theme == Dark { 
+    $text-color: #fff;
+    $theme-color:#42424a;
+    $secondary-color:#c24721;
+    $ternary-color:#698932;
+    $link-color:$secondary-color;
+    $menu-item-color:white;
+    $body-background-color:#22222a;
+}@else if $theme == Light{
+    $text-color: #000;
+    $theme-color:#373a27;
+    $secondary-color:#d26741;
+    $ternary-color:#b9da63;
+    $link-color:$secondary-color;
+    $menu-item-color:white;
+    $body-background-color:#fff;
+}@else if $theme == RedFight{
+    $text-color: rgb(250, 244, 244);
+    $theme-color:#a7121a;
+    $secondary-color:#d26f41;
+    $ternary-color:#adb3a0;
+    $link-color:$secondary-color;
+    $menu-item-color:white;
+    $body-background-color:rgb(175, 75, 36);
+}
+
+//Fonts
+$text-font:"Alegreya Sans",Arial,sans-serif;
+$headline-font:'Titillium Web',Georgia,serif;
+
+//Sizes
+$header-height:60px;
+$content-width:960px;
+$footer-height:90px;
+$col:col-width($colums:8);
